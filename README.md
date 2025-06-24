@@ -70,6 +70,12 @@ A aplicação segue princípios sólidos de projeto embarcado:
 
 ---
 
+### 📽️ Video... 
+
+[![Vídeo de Apresentação do Projeto](https://github.com/alfecjo/picodevfirmware/blob/main/project012/synthesize_audio_ac/assets/syntetize%20C.png)](https://www.youtube.com/watch?v=GLwqQY0oyi4)
+
+---
+
 ## ⚠️ Observação Importante – Variáveis de Ambiente
 
 Para que este exemplo funcione corretamente, é **imprescindível configurar todas variáveis de ambiente** no momento da compilação, aí sim será possível uma execução como a do vídeo:
