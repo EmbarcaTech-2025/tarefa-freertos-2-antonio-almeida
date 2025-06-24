@@ -43,7 +43,7 @@ A aplicação segue princípios sólidos de projeto embarcado:
   Cada tarefa executa uma responsabilidade bem definida (Wi-Fi/ping ou OLED), facilitando os três tipos principais de manutenção: corretiva, preventiva e preditiva.
 
 - **Baixo acoplamento**  
-  As tarefas se comunicam de forma simples e independente, sem bloqueios entre si (não há chamadas blocantes de ambos lados!!!).
+  As tarefas se comunicam de forma simples e independente sem bloqueios entre si. Tudo que ela precisa encontra-se no seu próprio domínio. (não há chamadas blocantes de ambos lados!!!).
 
 - **Escalabilidade e modularidade**  
   O projeto permite fácil extensão para múltiplas funcionalidades, como: sensores, atuadores ou outros periféricos, em ressonância aos requisítos que qualquer projeto necessite.
