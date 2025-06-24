@@ -7,9 +7,9 @@ add_executable(${TARGET_NAME}
             src/ssd1306.c
             )
     target_include_directories(${TARGET_NAME} PRIVATE
-            ${CMAKE_CURRENT_LIST_DIR}/include       # inclui ping.h na raiz
-            ${CMAKE_CURRENT_LIST_DIR}/..            # para FreeRTOSConfig.h
-            ${CMAKE_CURRENT_LIST_DIR}/../..         # para lwipopts.h
+            ${CMAKE_CURRENT_LIST_DIR}/include       # include ping.h in root
+            ${CMAKE_CURRENT_LIST_DIR}/..            # for FreeRTOSConfig.h
+            ${CMAKE_CURRENT_LIST_DIR}/../..         # for lwipopts.h
             )
     target_link_libraries(${TARGET_NAME}
             pico_cyw43_arch_lwip_sys_freertos
