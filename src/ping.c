@@ -396,7 +396,7 @@ ping_init(const ip_addr_t* ping_addr)
   #endif /* PING_USE_SOCKETS */
 }
 
-/** com isso fica estabelecdido a função de calback para ping_result_callback(ping_ok) */
+/** with this the callback function is established for ping_result_callback(ping_ok) */
 void ping_result_callback(int ping_ok) {
     if (ping_ok) {
         snprintf(linha1_buf, sizeof(linha1_buf), "Ping Google 8.8.8.8");
@@ -406,7 +406,7 @@ void ping_result_callback(int ping_ok) {
         snprintf(linha2_buf, sizeof(linha2_buf), "RTT: ---");
     }
 
-    oled_needs_update = 1; // sinaliza que há atualização pendente
+    oled_needs_update = 1; // signals that there is a pending update
 }
 
 #endif /* LWIP_RAW */
