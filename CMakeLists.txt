@@ -1,57 +1,22 @@
-# == DO NOT EDIT THE FOLLOWING LINES for the Raspberry Pi Pico VS Code Extension to work ==
-if(WIN32)
-    set(USERHOME $ENV{USERPROFILE})
-else()
-    set(USERHOME $ENV{HOME})
-endif()
-set(sdkVersion 2.1.1)
-set(toolchainVersion 14_2_Rel1)
-set(picotoolVersion 2.1.1)
-set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
-if (EXISTS ${picoVscode})
-    include(${picoVscode})
-endif()
-# ====================================================================================
-set(PICO_BOARD pico CACHE STRING "Board type")
-
-cmake_minimum_required(VERSION 3.12)
-
-# Set any variables required for importing libraries
-if (DEFINED ENV{FREERTOS_PATH})
-  SET(FREERTOS_PATH $ENV{FREERTOS_PATH})
-else()
-  SET(FREERTOS_PATH ${CMAKE_CURRENT_LIST_DIR}/FreeRTOS-Kernel)
-endif()
-
-message("FreeRTOS Kernel located in ${FREERTOS_PATH}")
-
-# Import those libraries
-include(pico_sdk_import.cmake)
-include(${FREERTOS_PATH}/portable/ThirdParty/GCC/RP2040/FreeRTOS_Kernel_import.cmake)
-
-# Define project
-project(embarcatech-tarefa-freertos-2 C CXX ASM)
-
-# Initialize the Raspberry Pi Pico SDK
-pico_sdk_init()
-
-add_executable(embarcatech-tarefa-freertos-2
-    main.c
-)
-
-target_include_directories(embarcatech-tarefa-freertos-2 PRIVATE
-    ${CMAKE_CURRENT_LIST_DIR}
-    ${CMAKE_CURRENT_LIST_DIR}/include
-)
-
-target_link_libraries(embarcatech-tarefa-freertos-2 
-    pico_stdlib 
-    FreeRTOS-Kernel-Heap4 
-    hardware_i2c
-    )
-
-pico_add_extra_outputs(embarcatech-tarefa-freertos-2)
-
-# if you have anything in "lib" folder then uncomment below - remember to add a CMakeLists.txt
-# file to the "lib" directory
-#add_subdirectory(lib)
+set(TARGET_NAME picow_freertos_ping_ac)
+add_executable(${TARGET_NAME}
+            src/picow_freertos_ping_ac.c
+            src/ping.c
+            src/i2c_setup.c
+            src/oled_setup.c
+            src/ssd1306.c
+            )
+    target_include_directories(${TARGET_NAME} PRIVATE
+            ${CMAKE_CURRENT_LIST_DIR}/include       # inclui ping.h na raiz
+            ${CMAKE_CURRENT_LIST_DIR}/..            # para FreeRTOSConfig.h
+            ${CMAKE_CURRENT_LIST_DIR}/../..         # para lwipopts.h
+            )
+    target_link_libraries(${TARGET_NAME}
+            pico_cyw43_arch_lwip_sys_freertos
+            pico_stdlib
+            pico_lwip_iperf
+            FreeRTOS-Kernel-Heap4 # FreeRTOS kernel and dynamic heap
+            hardware_i2c
+            )
+    
+    pico_enable_stdio_usb(${TARGET_NAME} 1)
