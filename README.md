@@ -1,4 +1,15 @@
-# Conceito Técnico – Aplicação FreeRTOS em C, atualizando de forma dinâmica, OLED da BitDogLab (BDL) em ação de 'ping' feito ao servidor Google https://8.8.8.8, usando suporte a Wi-Fi integrado ao chip CYW43 da Pico W.
+Tarefa: Roteiro de FreeRTOS #2 - EmbarcaTech 2025
+Autor: Antonio Almeida
+
+Curso: Residência Tecnológica em Sistemas Embarcados
+
+Instituição: EmbarcaTech - HBr
+
+Campinas, 24 de junho de 2025.
+
+---
+
+## Conceito Técnico – Aplicação FreeRTOS em C, atualizando de forma dinâmica, OLED da BitDogLab (BDL) em ação de 'ping' feito ao servidor Google https://8.8.8.8, usando suporte a Wi-Fi integrado ao chip CYW43 da Pico W.
 **Com total autorização das partes e autores originais** — conforme indicado no cabeçalho de cada arquivo `.c` e `.h`.  
 > Nenhum trecho de código foi utilizado sem respeito às licenças. Sigo fielmente as orientações dos autores: manter o código em **formato aberto e sem restrições**.
 
@@ -72,3 +83,8 @@ Essas variáveis podem ser definidas de forma:
 - Ou preferencialmente via **parâmetros de compilação**.
 
 > 💡 **Dica de segurança:** Evite incluir em arquivos versionados. Prefira passá-la via linha de comando ou arquivos `.env` os quais devem ser ignorados pelo Git.
+
+---
+
+📜 Licença
+GNU GPL-3.0.
