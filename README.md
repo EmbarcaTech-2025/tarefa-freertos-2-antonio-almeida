@@ -24,7 +24,7 @@ Neste projeto, a BDL* e seu Pico W roda um sistema **FreeRTOS** com múltiplas t
 ---
 
 ## Estrutura do Repositório
-
+```
 │── /project
 │   │── /ping_bdl_google
 │       │── assets               # Images, Videos, and Diagrams
@@ -32,7 +32,7 @@ Neste projeto, a BDL* e seu Pico W roda um sistema **FreeRTOS** com múltiplas t
 │       ├── src/                 # Main source code (.c, .cpp)
 │       ├── CMakeLists.txt       # Project configuration
 │       └── README.md            # Project Overview
-
+```
 ---
 
 Após inicializar o FreeRTOS, duas tasks principais são criadas:
