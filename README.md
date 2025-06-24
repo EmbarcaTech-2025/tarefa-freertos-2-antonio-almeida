@@ -89,7 +89,7 @@ Essas variáveis podem ser definidas de forma:
 - **Direta no código** para fins de testes locais,
 - Ou preferencialmente via **parâmetros de compilação**.
 
-> 💡 **Dica de segurança:** Evite incluir em arquivos versionados. Prefira passá-la via linha de comando ou arquivos `.env` os quais devem ser ignorados pelo Git.
+> 💡 **Dica de segurança:** Evite incluir em arquivos versionados. Prefira passá-las via linha de comando ou arquivos `.env` os quais devem ser ignorados pelo Git.
 
 ---
 
