@@ -15,7 +15,7 @@ add_executable(${TARGET_NAME}
             pico_cyw43_arch_lwip_sys_freertos
             pico_stdlib
             pico_lwip_iperf
-            FreeRTOS-Kernel-Heap4 # FreeRTOS kernel and dynamic heap
+            FreeRTOS-Kernel-Heap4                    # FreeRTOS kernel and dynamic heap
             hardware_i2c
             )
     
