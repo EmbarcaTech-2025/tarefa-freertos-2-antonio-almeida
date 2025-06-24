@@ -35,7 +35,7 @@ Após inicializar o FreeRTOS, duas tasks principais são criadas:
 
 ---
 
-## 🎯 Arquitetura
+## Arquitetura
 
 A aplicação segue princípios sólidos de projeto embarcado:
 
