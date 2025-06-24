@@ -62,7 +62,7 @@ A aplicação segue princípios sólidos de projeto embarcado:
 
 ---
 
-## ⚙️ Execução
+## Execução
 
 - O FreeRTOS roda sobre o SDK da Pico, utilizando o **core 0** por padrão.
 - As tasks são agendadas cooperativamente usando `vTaskDelay()`.
@@ -70,7 +70,7 @@ A aplicação segue princípios sólidos de projeto embarcado:
 
 ---
 
-## ✅ Benefícios
+## Benefícios
 
 - **Interface visual responsiva** graças à thread dedicada do OLED.
 - **Separação clara de responsabilidades**, que facilita entendimento e manutenção futuras.
