@@ -72,7 +72,7 @@ A aplicação segue princípios sólidos de projeto embarcado:
 
 ### 📽️ Video... 
 
-[![Vídeo de Apresentação do Projeto](https://github.com/EmbarcaTech-2025/tarefa-freertos-2-antonio-almeida/blob/main/ping.png)](https://www.youtube.com/watch?v=GLwqQY0oyi4)
+[![Vídeo de Apresentação do Projeto](https://github.com/EmbarcaTech-2025/tarefa-freertos-2-antonio-almeida/blob/main/assets/ping.png)](https://www.youtube.com/watch?v=GLwqQY0oyi4)
 
 ---
 
