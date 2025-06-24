@@ -12,7 +12,7 @@ Campinas, 24 de junho de 2025.
 
 ## Conceito Técnico – Aplicação FreeRTOS em C, atualizando de forma dinâmica, OLED da BitDogLab (BDL) em ação de 'ping' feito ao servidor Google https://8.8.8.8, usando suporte a Wi-Fi integrado ao chip CYW43 da Pico W.
 **Com total autorização das partes e autores originais** — conforme indicado no cabeçalho de cada arquivo `.c` e `.h`.  
-> Nenhum trecho de código foi utilizado sem respeito às licenças. Sigo fielmente as orientações dos autores: manter o código em **formato aberto e sem restrições**.
+> Nenhum trecho de código foi utilizado sem respeito às licenças. Sigo fielmente as orientações dos autores: manter o código em **formato aberto e sem restrições!!!**.
 
 Neste projeto, a Raspberry Pi Pico W roda um sistema **FreeRTOS** com múltiplas tarefas, implementando **conectividade Wi-Fi** e **atualização dinâmica de display OLED contido na BDL***
 
