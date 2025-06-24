@@ -1,4 +1,5 @@
 Tarefa: Roteiro de FreeRTOS #2 - EmbarcaTech 2025
+
 Autor: Antonio Almeida
 
 Curso: Residência Tecnológica em Sistemas Embarcados
