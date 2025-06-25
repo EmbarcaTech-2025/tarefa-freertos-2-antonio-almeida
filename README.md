@@ -15,7 +15,7 @@ Campinas, 24 de junho de 2025.
 > Nenhum trecho de código foi utilizado sem respeito às licenças. Sigo fielmente as orientações dos autores: manter o código em **formato aberto e sem restrições!!!**.
 
 Objetivo da Arquitetura
-- Exibir no OLED os resultados do ping (tempo de resposta ou falha), sem misturar lógica de exibição com lógica de rede.
+- Exibir no OLED os resultados do ping (RTT – Round-Trip Time), sem misturar lógica de exibição com lógica de rede.
 
 Neste projeto, a BDL* e seu Pico W roda um sistema **FreeRTOS** com múltiplas tarefas, implementando **conectividade Wi-Fi** e **atualização dinâmica de display OLED.**
 
