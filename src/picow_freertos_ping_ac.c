@@ -68,7 +68,7 @@ void oled_ping_task(void *pvParameters) // Task to handle OLED updates
     {
         if (oled_needs_update)
         {
-            update_oled_text(linha1_buf, linha2_buf); // writes on OLED
+            update_oled_text(line1_buf, line2_buf); // writes on OLED
             oled_needs_update = 0;
         }
 

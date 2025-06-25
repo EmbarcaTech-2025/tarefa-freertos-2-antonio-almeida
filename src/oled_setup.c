@@ -8,8 +8,8 @@ ssd1306_t disp; // global variable for the SSD1306 display
 
 
 volatile int oled_needs_update = 0;
-char linha1_buf[32] = {0};
-char linha2_buf[32] = {0};
+char line1_buf[32] = {0};
+char line2_buf[32] = {0};
 
 void setup_oled(void)
 {

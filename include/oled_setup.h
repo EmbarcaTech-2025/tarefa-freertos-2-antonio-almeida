@@ -3,8 +3,8 @@
 #define OLED_SETUP_H  
 
 extern volatile int oled_needs_update; // Flag to indicate if OLED needs update
-extern char linha1_buf[32]; // Buffer for first line of OLED text
-extern char linha2_buf[32]; // Buffer for second line of OLED text
+extern char line1_buf[32]; // Buffer for first line of OLED text
+extern char line2_buf[32]; // Buffer for second line of OLED text
 
 void setup_oled(void);  // Function to setup OLED display
 
