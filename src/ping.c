@@ -403,7 +403,7 @@ void ping_result_callback(int ping_ok) {
         snprintf(line2_buf, sizeof(linha2_buf), "Real Time: %lu ms", sys_now() - ping_time);
     } else {
         snprintf(line1_buf, sizeof(linha1_buf), "Ping Timeout");
-        snprintf(line2_buf, sizeof(linha2_buf), "RTT: ---");
+        snprintf(line2_buf, sizeof(linha2_buf), "RTT: error");
     }
 
     oled_needs_update = 1; // signals that there is a pending update
