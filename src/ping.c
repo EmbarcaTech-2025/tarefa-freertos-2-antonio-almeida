@@ -399,11 +399,11 @@ ping_init(const ip_addr_t* ping_addr)
 /** with this the callback function is established for ping_result_callback(ping_ok) */
 void ping_result_callback(int ping_ok) {
     if (ping_ok) {
-        snprintf(line1_buf, sizeof(linha1_buf), "Ping Google 8.8.8.8");
-        snprintf(line2_buf, sizeof(linha2_buf), "Round-Trip Time: %lu ms", sys_now() - ping_time);
+        snprintf(line1_buf, sizeof(line1_buf), "Ping Google 8.8.8.8");
+        snprintf(line2_buf, sizeof(line2_buf), "Round-Trip Time: %lu ms", sys_now() - ping_time);
     } else {
-        snprintf(line1_buf, sizeof(linha1_buf), "Ping Timeout");
-        snprintf(line2_buf, sizeof(linha2_buf), "RTT(latency): error");
+        snprintf(line1_buf, sizeof(line1_buf), "Ping Timeout");
+        snprintf(line2_buf, sizeof(line2_buf), "RTT(latency): error");
     }
 
     oled_needs_update = 1; // signals that there is a pending update
