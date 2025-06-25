@@ -23,6 +23,10 @@ Neste projeto, a BDL* e seu Pico W roda um sistema **FreeRTOS** com múltiplas t
 
 ---
 
+![Ping to Google DNS via OLED](https://raw.githubusercontent.com/alfecjo/picodevfirmware/main/project015/ping_google_bdl_ac/assets/DNS%208888%20Google.png)
+
+---
+
 ## Estrutura do Repositório
 ```
 │── /project
